@@ -1,0 +1,22 @@
+@use "../global" as *;
+@use "../util" as *;
+
+.container {
+  padding: rem(36) 0;
+  font-family: var(--font-family);
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-brand {
+    margin-left: rem(-12);
+  }
+
+  &-login {
+    margin-right: rem(-12);
+  }
+}

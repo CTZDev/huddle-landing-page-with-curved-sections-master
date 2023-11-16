@@ -1,0 +1,14 @@
+/**Primarios*/
+/*Neutral*/
+:root {
+  --primary-pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+  --font-family: "Open Sans", "Poppins", arial;
+  --fz-sm: 13px;
+  --fz-md: 16px;
+}
+
+/*# sourceMappingURL=root.css.map */

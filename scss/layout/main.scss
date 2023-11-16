@@ -1,0 +1,117 @@
+@use "../global" as *;
+@use "../util" as *;
+
+.hero {
+  text-align: center;
+  padding: rem(120) 0;
+
+  &-home {
+    line-height: 1.4;
+    color: var(--very-dark-cyan);
+
+    & h2 {
+      font-size: 1.8em;
+      font-weight: 700;
+      padding-bottom: 2rem;
+      font-family: "Poppins", sans-serif;
+    }
+
+    & p {
+      font-weight: 600;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &-community {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &-img {
+      padding: rem(120) 0;
+    }
+
+    &-data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: rem(96);
+
+      &-info {
+        max-width: max-content;
+
+        &:last-child p {
+          font-size: 2.95rem;
+        }
+
+        & img {
+          align-self: flex-start;
+        }
+
+        & p {
+          font-size: 3.5rem;
+          font-weight: 700;
+          color: var(--very-dark-cyan);
+        }
+
+        & span {
+          font-family: var(--font-family);
+          display: block;
+          font-size: 0.8rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  &-grow {
+    padding-bottom: rem(60);
+
+    &-content {
+      background-color: #f6fbff;
+    }
+
+    &-img > img {
+      width: 100%;
+    }
+  }
+
+  &-conversations {
+    padding-bottom: rem(60);
+  }
+
+  &-users {
+    padding-bottom: rem(120);
+
+    &-content {
+      &-img {
+        background-color: #f6fbff;
+        z-index: -1;
+        margin-top: -6rem;
+        z-index: -1;
+
+        & img {
+          padding-top: 6rem;
+        }
+      }
+
+      &-text {
+        background-color: #f6fbff;
+      }
+    }
+
+    &-img > img {
+      width: 100%;
+      height: rem(120);
+    }
+  }
+
+  &-buy {
+    & h2 {
+      font-family: "Poppins";
+      font-size: 1.7em;
+      line-height: 1.6;
+      color: var(--very-dark-cyan);
+      padding-bottom: rem(42);
+    }
+  }
+}

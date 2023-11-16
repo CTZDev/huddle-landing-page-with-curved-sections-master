@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header wrapper">
+        <figure class="header-brand">
+          <img src="dist/images/logo.svg" alt="Logo" width="100" />
+        </figure>
+        <div class="header-login">
+          <button type="button" class="btn btn-secondary">Try it Free</button>
+        </div>
+      </header>
+
+      <main class="hero">
+        <section class="hero-home wrapper">
+          <h2>Build The Community Your Fans Will Love</h2>
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice, but so does your audience.Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button type="button" class="btn btn-primary">Get Started For Free</button>
+        </section>
+
+        <section class="hero-community wrapper">
+          <figure class="hero-community-img">
+            <img src="dist/images/screen-mockups.svg" alt="Community Mockup" width="100%" style="max-width: max-content" />
+          </figure>
+
+          <article class="hero-community-data">
+            <div class="hero-community-data-info">
+              <img src="dist/images/icon-communities.svg" alt="Community global" width="32" />
+              <p>1.4k+<span>Communities Formed</span></p>
+            </div>
+
+            <div class="hero-community-data-info">
+              <img src="dist/images/icon-messages.svg" alt="Community messages" width="32" />
+              <p>2.7m+<span>Messages Sent</span></p>
+            </div>
+          </article>
+        </section>
+
+        <section class="hero-grow">
+          <picture class="hero-grow-img">
+            <source media="(min-width: 1024px)" srcset="dist/images/bg-section-top-desktop-1.svg" />
+            <img src="dist/images/bg-section-top-mobile-1.svg" alt="Grow Theme" />
+          </picture>
+          <article class="hero-grow-content u-paragraph wrapper">
+            <div class="hero-grow-content-text u-paragraph-text">
+              <h2>Grow Together</h2>
+              <p>
+                Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss
+                out on with a feedback form.
+              </p>
+            </div>
+            <figure class="hero-grow-content-img u-paragraph-img">
+              <img src="dist/images/illustration-grow-together.svg" alt="Grow Together" />
+            </figure>
+          </article>
+          <picture class="hero-grow-img">
+            <source media="(min-width: 1024px)" srcset="dist/images/bg-section-top-desktop-2.svg" />
+            <img src="dist/images/bg-section-top-mobile-2.svg" alt="Grow Theme II" style="transform: rotate(180deg)" />
+          </picture>
+        </section>
+
+        <section class="hero-conversations u-paragraph wrapper">
+          <div class="hero-conversations-text u-paragraph-text">
+            <h2>Flowing Conversations</h2>
+            <p>
+              You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
+            </p>
+          </div>
+          <figure class="hero-conversations-img u-paragraph-img">
+            <img src="dist/images/illustration-flowing-conversation.svg" alt="Conversations" />
+          </figure>
+        </section>
+
+        <section class="hero-users">
+          <picture class="hero-users-img">
+            <source media="(min-width: 1024px)" srcset="dist/images/bg-section-bottom-desktop-1.svg" />
+            <img src="dist/images/bg-section-bottom-mobile-1.svg" alt="Users Theme" />
+          </picture>
+          <article class="hero-users-content u-paragraph">
+            <div class="hero-users-content-text u-paragraph-text wrapper">
+              <h2>Your Users</h2>
+              <p>
+                It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your
+                users can start chatting immediately.
+              </p>
+            </div>
+            <figure class="hero-users-content-img u-paragraph-img">
+              <img src="dist/images/illustration-your-users.svg" alt="Users" class="wrapper" />
+            </figure>
+          </article>
+          <picture class="hero-users-img">
+            <source media="(min-width: 1024px)" srcset="dist/images/bg-section-bottom-desktop-2.svg" />
+            <img src="dist/images/bg-section-bottom-mobile-2.svg" alt="Users Theme II" />
+          </picture>
+        </section>
+
+        <section class="hero-buy wrapper">
+          <h2>Ready To Build Your Community?</h2>
+          <button type="button" class="btn btn-primary">Get Started For Free</button>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <picture class="footer-img">
+          <source media="(min-width: 1024px)" srcset="dist/images/bg-footer-top-desktop.svg" />
+          <img src="dist/images/bg-footer-top-mobile.svg" alt="Footer Theme" width="100%" />
+        </picture>
+
+        <section class="footer-data">
+          <header class="footer-header">
+            <figure class="footer-header-brand">
+              <img src="dist/images/logo.svg" alt="Logo" />
+            </figure>
+          </header>
+          <article class="footer-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+            <p>Phone: +1-543-123-4567</p>
+            <p>example@huddle.com</p>
+            <div class="footer-content-networks">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+          </article>
+        </section>
+
+        <section class="footer-subscribe">
+          <div class="footer-suscribe-content">
+            <header class="footer-subscribe-title">
+              <h3>Newsletter</h3>
+            </header>
+            <p class="footer-subscribe-text">
+              To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address
+            </p>
+            <input type="text" name="txtsuscribe" id="txtsuscribe" placeholder="Write your email .." />
+          </div>
+
+          <button type="button">Subscribe</button>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
