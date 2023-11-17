@@ -80,9 +80,13 @@
   }
 
   &-users {
-    padding-bottom: rem(120);
+    padding-bottom: rem(60);
 
     &-content {
+      &-text {
+        padding-bottom: rem(100);
+      }
+
       &-img {
         background-color: #f6fbff;
         z-index: -1;

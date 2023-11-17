@@ -124,37 +124,42 @@
           <img src="dist/images/bg-footer-top-mobile.svg" alt="Footer Theme" width="100%" />
         </picture>
 
-        <section class="footer-data">
-          <header class="footer-header">
-            <figure class="footer-header-brand">
-              <img src="dist/images/logo.svg" alt="Logo" />
-            </figure>
-          </header>
-          <article class="footer-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
-            <p>Phone: +1-543-123-4567</p>
-            <p>example@huddle.com</p>
-            <div class="footer-content-networks">
-              <ion-icon name="logo-facebook"></ion-icon>
-              <ion-icon name="logo-instagram"></ion-icon>
-              <ion-icon name="logo-twitter"></ion-icon>
-            </div>
-          </article>
-        </section>
-
-        <section class="footer-subscribe">
-          <div class="footer-suscribe-content">
-            <header class="footer-subscribe-title">
-              <h3>Newsletter</h3>
+        <div class="footer-container wrapper">
+          <section class="footer-data">
+            <header class="footer-header">
+              <figure class="footer-header-brand">
+                <img src="dist/images/logo.svg" alt="Logo" />
+              </figure>
             </header>
-            <p class="footer-subscribe-text">
-              To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address
-            </p>
-            <input type="text" name="txtsuscribe" id="txtsuscribe" placeholder="Write your email .." />
-          </div>
+            <article class="footer-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+              <div class="footer-content-send">
+                <p>Phone: +1-543-123-4567</p>
+                <p>example@huddle.com</p>
+              </div>
+              <div class="footer-content-networks">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+              </div>
+            </article>
+          </section>
 
-          <button type="button">Subscribe</button>
-        </section>
+          <section class="footer-subscribe">
+            <div class="footer-subscribe-content">
+              <header class="footer-subscribe-title">
+                <h3>Newsletter</h3>
+              </header>
+              <p class="footer-subscribe-text">
+                To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email
+                address
+              </p>
+              <input type="text" name="txtsubscribe" id="txtsubscribe" class="txt" />
+            </div>
+
+            <button type="button" class="btn btn-primary btn--subscribe">Subscribe</button>
+          </section>
+        </div>
       </footer>
     </div>
   </body>

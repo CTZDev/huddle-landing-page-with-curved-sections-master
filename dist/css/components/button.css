@@ -162,5 +162,10 @@ picture {
 .btn-primary:hover {
   background-color: var(--light-pink);
 }
+.btn--subscribe {
+  box-shadow: none;
+  border-radius: 0.5rem;
+  width: max-content;
+}
 
 /*# sourceMappingURL=button.css.map */

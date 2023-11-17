@@ -1,0 +1,12 @@
+@use "../global" as *;
+@use "../util" as *;
+
+.txt {
+  padding: rem(12);
+  border-radius: rem(8);
+  font-family: var(--font-family);
+  outline: none;
+  border: none;
+  color: var(--very-dark-cyan);
+  width: 100%;
+}

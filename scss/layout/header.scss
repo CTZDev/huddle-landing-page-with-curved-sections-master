@@ -2,7 +2,7 @@
 @use "../util" as *;
 
 .container {
-  padding: rem(36) 0;
+  padding: rem(36) 0 0;
   font-family: var(--font-family);
   min-height: 100vh;
 }

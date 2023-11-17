@@ -200,7 +200,10 @@ picture {
   padding-bottom: 3.75rem;
 }
 .hero-users {
-  padding-bottom: 7.5rem;
+  padding-bottom: 3.75rem;
+}
+.hero-users-content-text {
+  padding-bottom: 6.25rem;
 }
 .hero-users-content-img {
   background-color: #f6fbff;

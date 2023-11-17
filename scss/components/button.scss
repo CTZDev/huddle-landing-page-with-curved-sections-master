@@ -6,7 +6,7 @@
   outline: none;
   border: 0;
   border-radius: rem(16);
-  font-family:  var(--font-family);
+  font-family: var(--font-family);
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 0 4px 1px;
@@ -31,6 +31,9 @@
     }
   }
 
+  &--subscribe {
+    box-shadow: none;
+    border-radius: rem(8);
+    width: max-content;
+  }
 }
-
-

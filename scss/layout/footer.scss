@@ -1,0 +1,92 @@
+@use "../global" as *;
+@use "../util" as *;
+
+.footer {
+  &-container {
+    display: flex;
+    flex-direction: column-reverse;
+    color: var(--very-pale-blue);
+    background-color: var(--very-dark-cyan);
+  }
+
+  &-subscribe {
+    max-width: rem(480);
+    padding: rem(60) 0;
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    margin: auto;
+
+    &-title {
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+
+    &-text {
+      line-height: 1.6;
+      font-weight: 600;
+      padding: rem(30) 0;
+    }
+
+    & .btn--subscribe {
+      align-self: flex-end;
+    }
+  }
+
+  &-data {
+    margin: auto;
+    padding: rem(40) 0 rem(20);
+    max-width: rem(480);
+  }
+
+  &-header-brand > img {
+    filter: brightness(0) invert(1);
+  }
+
+  &-content {
+    line-height: 1.6;
+    font-weight: 600;
+    padding: rem(20) 0 0;
+
+    &-send {
+      padding: rem(24) 0;
+      $phone: "../images/icon-phone.svg";
+      $email: "../images/icon-email.svg";
+
+      & p {
+        height: rem(36);
+        display: flex;
+        align-items: center;
+        gap: rem(20);
+        font-weight: normal;
+
+        &::before {
+          content: "";
+          display: block;
+          width: rem(20);
+          height: rem(20);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &:first-child::before {
+          background-image: url($phone);
+        }
+
+        &:last-child::before {
+          background-image: url($email);
+        }
+      }
+    }
+
+    &-networks {
+      display: flex;
+      gap: rem(10);
+      padding: rem(20) 0;
+
+      & * {
+        font-size: rem(26);
+      }
+    }
+  }
+}
