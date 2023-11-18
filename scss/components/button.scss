@@ -5,7 +5,7 @@
   padding: rem(6) rem(16);
   outline: none;
   border: 0;
-  border-radius: rem(16);
+  border-radius: rem(40);
   font-family: var(--font-family);
   font-weight: 700;
   cursor: pointer;
@@ -13,8 +13,16 @@
   transition: color 400ms ease-out, background-color 400ms ease-out;
   background-color: #fff;
 
+  @include mq(medium) {
+    font-size: 1em;
+  }
+
   &-secondary {
     color: var(--primary-pink);
+
+    @include mq(medium) {
+      padding: rem(7) rem(32);
+    }
 
     &:hover {
       color: var(--light-pink);
@@ -25,6 +33,10 @@
     color: var(--very-pale-blue);
     background-color: var(--primary-pink);
     padding: rem(10) rem(28);
+
+    @include mq(medium) {
+      padding: rem(16) rem(50);
+    }
 
     &:hover {
       background-color: var(--light-pink);

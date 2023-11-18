@@ -2,21 +2,35 @@
 @use "../util" as *;
 
 .container {
-  padding: rem(36) 0 0;
+  padding-top: rem(36);
   font-family: var(--font-family);
   min-height: 100vh;
+
+  @include mq(medium) {
+    padding-top: rem(48);
+  }
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 90em;
+  margin: auto;
 
   &-brand {
     margin-left: rem(-12);
+
+    @include mq(medium) {
+      margin-left: 0;
+    }
   }
 
   &-login {
     margin-right: rem(-12);
+
+    @include mq(medium) {
+      margin-right: 0;
+    }
   }
 }

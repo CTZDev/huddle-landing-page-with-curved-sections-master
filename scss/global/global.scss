@@ -95,20 +95,31 @@ picture {
 
 .wrapper {
   padding: 0 rem(36);
+
+  @include mq(medium) {
+    padding: 0 rem(64);
+  }
 }
 
 .u-paragraph {
-  display: flex;
-  flex-direction: column-reverse;
-
   &-img {
     padding: 4rem 0;
+
+    & img {
+      margin: auto;
+
+      @include mq(medium) {
+        width: 60%;
+      }
+    }
   }
 
   &-text {
     color: var(--very-dark-cyan);
     line-height: 1.5;
     font-weight: 600;
+    max-width: rem(480);
+    margin: auto;
 
     & h2 {
       font-family: "Poppins", sans-serif;

@@ -3,10 +3,23 @@
 
 .footer {
   &-container {
-    display: flex;
-    flex-direction: column-reverse;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
     color: var(--very-pale-blue);
     background-color: var(--very-dark-cyan);
+    padding-top: rem(40);
+    padding-bottom: rem(20);
+    gap: rem(80);
+    @include mq(medium) {
+      grid-template-rows: 1fr;
+      gap: rem(120);
+    }
+
+    @include mq(large) {
+      padding: rem(80) calc((100vw - 85em) / 2);
+      grid-template-columns: rem(352) 1fr rem(352) rem(140);
+    }
   }
 
   &-subscribe {
@@ -16,6 +29,23 @@
     flex-direction: column;
     gap: rem(10);
     margin: auto;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    @include mq(medium) {
+      grid-row: initial;
+      grid-column: 3 / -1;
+      padding: 0;
+    }
+
+    @include mq(large) {
+      grid-column: 3 / -1;
+      max-width: initial;
+      display: grid;
+      grid-template-columns: subgrid;
+      gap: rem(36);
+      margin-top: inherit;
+    }
 
     &-title {
       text-transform: uppercase;
@@ -35,8 +65,18 @@
 
   &-data {
     margin: auto;
-    padding: rem(40) 0 rem(20);
     max-width: rem(480);
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+
+    @include mq(medium) {
+      grid-column: 1 / span 2;
+      grid-row: initial;
+    }
+
+    @include mq(large) {
+      grid-column: 1 / span 1;
+    }
   }
 
   &-header-brand > img {
@@ -86,6 +126,25 @@
 
       & * {
         font-size: rem(26);
+        cursor: pointer;
+        transition: all 500ms ease-in-out;
+        user-select: none;
+
+        @include mq(large) {
+          font-size: rem(30);
+        }
+      }
+
+      & ion-icon[name="logo-facebook"]:hover {
+        color: #749cf1;
+      }
+
+      & ion-icon[name="logo-instagram"]:hover {
+        color: #833ab4;
+      }
+
+      & ion-icon[name="logo-twitter"]:hover {
+        color: #1da1f2;
       }
     }
   }

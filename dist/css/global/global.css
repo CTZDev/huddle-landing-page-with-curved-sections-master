@@ -90,18 +90,29 @@ picture {
 .wrapper {
   padding: 0 2.25rem;
 }
-
-.u-paragraph {
-  display: flex;
-  flex-direction: column-reverse;
+@media only screen and (min-width: 64em) {
+  .wrapper {
+    padding: 0 4rem;
+  }
 }
+
 .u-paragraph-img {
   padding: 4rem 0;
+}
+.u-paragraph-img img {
+  margin: auto;
+}
+@media only screen and (min-width: 64em) {
+  .u-paragraph-img img {
+    width: 60%;
+  }
 }
 .u-paragraph-text {
   color: var(--very-dark-cyan);
   line-height: 1.5;
   font-weight: 600;
+  max-width: 30rem;
+  margin: auto;
 }
 .u-paragraph-text h2 {
   font-family: "Poppins", sans-serif;

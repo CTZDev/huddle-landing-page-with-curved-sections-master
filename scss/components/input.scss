@@ -9,4 +9,8 @@
   border: none;
   color: var(--very-dark-cyan);
   width: 100%;
+
+  @include mq(medium) {
+    padding: rem(18);
+  }
 }
